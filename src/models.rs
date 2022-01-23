@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 
 type Snowflake = String;
 
-#[derive(Deserialize, Debug, Clone)]
+#[derive(Deserialize, Debug)]
 pub struct Webhook {
     pub id: Snowflake,
     #[serde(rename = "type")]
